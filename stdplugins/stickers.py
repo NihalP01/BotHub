@@ -29,7 +29,7 @@ from telethon.tl.types import (
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="kang ?(.*)"))
+@borg.on(admin_cmd(pattern="kang(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -125,7 +125,7 @@ async def _(event):
     await event.edit(f"R.I.P this sticker! This Sticker's Soul is [here](t.me/addstickers/{packshortname})")
 
 
-@borg.on(admin_cmd(pattern="packinfo"))
+@borg.on(admin_cmd(pattern="info"))
 async def _(event):
     if event.fwd_from:
         return
@@ -161,7 +161,7 @@ async def _(event):
                      f"**Emojis In Pack:** {' '.join(pack_emojis)}")
 
 
-@borg.on(admin_cmd(pattern="getsticker ?(.*)"))
+@borg.on(admin_cmd(pattern="get ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return

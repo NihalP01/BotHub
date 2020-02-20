@@ -1,8 +1,8 @@
 """Make / Download Telegram Sticker Packs without installing Third Party applications
 Available Commands:
-.kangsticker [Optional Emoji]
-.packinfo
-.getsticker"""
+.kang [Optional Emoji]
+.info
+.get"""
 from telethon import events
 from io import BytesIO
 from PIL import Image
@@ -29,7 +29,7 @@ from telethon.tl.types import (
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="kangsticker ?(.*)"))
+@borg.on(admin_cmd(pattern="kang ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -44,9 +44,11 @@ async def _(event):
 
     me = borg.me
     userid = event.from_id
-    packname = f"{userid}'s @UniBorg Pack"
-    packshortname = f"Uni_Borg_{userid}"  # format: Uni_Borg_userid
-
+    # packname = f"{userid}'s @UniBorg Pack"
+    # packshortname = f"Uni_Borg_{userid}"  # format: Uni_Borg_userid
+    packname = f"a{user.id}_by_{user.username}_{pack}"
+    packshortname = f"@{user.username}'s kang pack Vol.{pack}"
+      
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "@UniBorg_Sticker.png"
     file = await borg.download_file(reply_message.media)

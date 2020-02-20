@@ -28,14 +28,14 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     e = stderr.decode()
-    if not e:
-        e = "No Error"
-    o = stdout.decode()
-    if not o:
-        o = "**Tip**: \n`Nikal Bhai, Terse Nai Hona, Nikal le.`"
-    else:
-        _o = o.split("\n")
-        o = "`\n".join(_o)
+    #if not e:
+    #    e = "No Error"
+    #o = stdout.decode()
+    #if not o:
+    #   o = "**Tip**: \n`Nikal Bhai, Terse Nai Hona, Nikal le.`"
+    #else:
+    #    _o = o.split("\n")
+    #    o = "`\n".join(_o)
     OUTPUT = f"**QUERY:**\n__Command:__\n`{cmd}` \n__PID:__\n`{process.pid}`\n\n**stderr:** \n`{e}`\n**Output:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:

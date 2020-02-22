@@ -1,4 +1,4 @@
-"""use cmd .Avinash
+"""use cmd .Nihal
 aaahaaa you can edit this 😉"""
 
 from telethon import events
@@ -23,72 +23,14 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Avinash":
+    if input_str == "Nihal":
 
         await event.edit(input_str)
 
         animation_chars = [
 
-            "👑Avinash👑👑👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
+            "👑Nihal👑👑👑👑Priyanka👑👑Nihal👑👑Priyanka👑\n👑Nihal👑👑Priyanka👑👑Nihal👑👑Priyanka👑👑Nihal👑\n👑Priyanka👑👑Nihal👑👑Priyanka👑👑Nihal👑👑Priyanka👑\n👑Priyanka👑👑Nihal👑👑Priyanka👑👑Nihal👑👑Priyanka👑\n👑Priyanka👑👑Nihal👑👑Priyanka👑👑Nihal👑👑Priyanka👑",
 
-            "◼️👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️️👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️◼️👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "‎◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n👑Avinash👑👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑◼️◼️\n◼️👑Avinash👑👑Avinash👑👑Avinash👑◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑◼️◼️\n◼️👑Avinash👑👑Avinash👑◼️◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑◼️◼️\n◼️👑Avinash👑◼️◼️◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️👑Avinash👑👑Avinash👑◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️👑Avinash👑◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️◼️◼️",
-
-            "◼️◼️◼️◼️\n◼️◼️◼️◼️\n◼️◼️◼️◼️\n◼️◼️◼️◼️",
-
-            "◼️◼️◼️\n◼️◼️◼️\n◼️◼️◼️",
-
-            "◼️◼️\n◼️◼️",
-
-            "◼️",
-            "👑 Avinash 👑"
         ]
 
         for i in animation_ttl:

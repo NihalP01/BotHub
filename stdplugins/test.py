@@ -6,5 +6,5 @@ import sys
 @borg.on(events.NewMessage(pattern=r"\.t", outgoing=True))
 async def test(event):
     if event.fwd_from:
-        return 
-    await event.edit("Fok U saar")      
+        return
+    await event.edit("Hey I am Alive!")

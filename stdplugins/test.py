@@ -7,4 +7,4 @@ import sys
 async def test(event):
     if event.fwd_from:
         return
-    await event.edit("Hey I am Alive!")
+    await event.edit("Nihal ❤️ Priyanka")
